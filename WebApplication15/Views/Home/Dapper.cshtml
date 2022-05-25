@@ -1,0 +1,15 @@
+﻿@page
+@model IEnumerable<WebApplication15.Models.Product>
+@{
+    ViewData["Title"] = "Dapper Page";
+}
+<table>
+@foreach (var products in Model)
+{
+    <td>@products.ID</td>
+    <td>@products.Name</td>
+    <td>@products.Weight</td>
+}
+    </table>
+
+
